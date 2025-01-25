@@ -108,12 +108,12 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
                 <version>${spring-cloud-starter-zookeeper-discovery.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.apache.zookeeper</groupId>
-                        <artifactId>zookeeper</artifactId>
-                    </exclusion>
-                </exclusions>
+<!--                <exclusions>-->
+<!--                    <exclusion>-->
+<!--                        <groupId>org.apache.zookeeper</groupId>-->
+<!--                        <artifactId>zookeeper</artifactId>-->
+<!--                    </exclusion>-->
+<!--                </exclusions>-->
             </dependency>
             <!-- swagger-spring-boot-starter -->
             <dependency>
