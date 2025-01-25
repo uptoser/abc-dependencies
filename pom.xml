@@ -15,7 +15,7 @@
 	<packaging>pom</packaging>
     <properties>
         <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
-        <spring-cloud-alibaba.version>2.2.8.RELEASE</spring-cloud-alibaba.version>
+        <spring-cloud-alibaba.version>2.2.10-RC1</spring-cloud-alibaba.version>
         <spring-cloud-alibaba-dubbo.version>2.2.7.RELEASE</spring-cloud-alibaba-dubbo.version>
         <spring-cloud-starter-zookeeper-discovery.version>2.2.5.RELEASE</spring-cloud-starter-zookeeper-discovery.version>
         <swagger-spring-boot-starter.version>2.0.2.RELEASE</swagger-spring-boot-starter.version>
@@ -39,6 +39,7 @@
         <hibernate-validator.version>6.1.7.Final</hibernate-validator.version>
         <zookeeper.version>3.9.2</zookeeper.version>
         <dubbo.version>2.7.13</dubbo.version>
+        <curator-x-discovery.version>4.0.1</curator-x-discovery.version>
         <curator-framework.version>4.0.1</curator-framework.version>
         <curator-recipes.version>4.0.1</curator-recipes.version>
         <lombok.version>1.18.36</lombok.version>
@@ -78,9 +79,20 @@
             </dependency>
             <!-- zookeeper -->
             <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-dependencies-zookeeper</artifactId>
+                <version>${dubbo-spring-boot-starter.version}</version>
+                <type>pom</type>
+            </dependency>
+            <dependency>
                 <groupId>org.apache.zookeeper</groupId>
                 <artifactId>zookeeper</artifactId>
                 <version>${zookeeper.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-x-discovery</artifactId>
+                <version>${curator-x-discovery.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.curator</groupId>
@@ -247,6 +259,13 @@
                 <artifactId>cglib</artifactId>
                 <version>${cglib.version}</version>
             </dependency>
+            <!-- 工具类 -->
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>2.10.1</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 </project>
