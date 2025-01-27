@@ -15,7 +15,7 @@
 	<packaging>pom</packaging>
     <properties>
         <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
-        <spring-cloud-alibaba.version>2.2.10-RC1</spring-cloud-alibaba.version>
+        <spring-cloud-alibaba.version>2.2.8.RELEASE</spring-cloud-alibaba.version>
         <spring-cloud-alibaba-dubbo.version>2.2.7.RELEASE</spring-cloud-alibaba-dubbo.version>
         <spring-cloud-starter-zookeeper-discovery.version>2.2.5.RELEASE</spring-cloud-starter-zookeeper-discovery.version>
         <swagger-spring-boot-starter.version>2.0.2.RELEASE</swagger-spring-boot-starter.version>
@@ -24,6 +24,7 @@
         <druid-spring-boot-starter.version>1.2.15</druid-spring-boot-starter.version>
         <dubbo-spring-boot-starter.version>2.7.13</dubbo-spring-boot-starter.version>
         <spring-boot-starter-data-redis.version>2.3.12.RELEASE</spring-boot-starter-data-redis.version>
+        <rocketmq-spring-boot-starter.version>2.2.2</rocketmq-spring-boot-starter.version>
         <junit.version>4.13.2</junit.version>
         <spring.version>5.2.15.RELEASE</spring.version>
         <mybatis.version>3.5.17</mybatis.version>
@@ -222,6 +223,12 @@
                 <groupId>redis.clients</groupId>
                 <artifactId>jedis</artifactId>
                 <version>${jedis.version}</version>
+            </dependency>
+            <!--rocketmq-spring-boot-starter-->
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-spring-boot-starter</artifactId>
+                <version>${rocketmq-spring-boot-starter.version}</version>
             </dependency>
             <!--commons-dbcp-->
             <dependency>
