@@ -25,6 +25,7 @@
         <dubbo-spring-boot-starter.version>2.7.13</dubbo-spring-boot-starter.version>
         <spring-boot-starter-data-redis.version>2.3.12.RELEASE</spring-boot-starter-data-redis.version>
         <rocketmq-spring-boot-starter.version>2.2.2</rocketmq-spring-boot-starter.version>
+        <sentinel-datasource-nacos.version>1.7.2</sentinel-datasource-nacos.version>
         <junit.version>4.13.2</junit.version>
         <spring.version>5.2.15.RELEASE</spring.version>
         <mybatis.version>3.5.17</mybatis.version>
@@ -229,6 +230,12 @@
                 <groupId>org.apache.rocketmq</groupId>
                 <artifactId>rocketmq-spring-boot-starter</artifactId>
                 <version>${rocketmq-spring-boot-starter.version}</version>
+            </dependency>
+            <!--sentinel-datasource-nacos-->
+            <dependency>
+                <groupId>com.alibaba.csp</groupId>
+                <artifactId>sentinel-datasource-nacos</artifactId>
+                <version>${sentinel-datasource-nacos.version}</version>
             </dependency>
             <!--commons-dbcp-->
             <dependency>
